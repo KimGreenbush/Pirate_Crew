@@ -13,8 +13,7 @@ module.exports.singlePirate = (req, res) => {
 }
 
 module.exports.createPirate = (req, res) => {
-    const {name} = req.body
-    Pirate.create({name})
+    Pirate.create(req.body)
         .then(pirate => res.json(pirate))
         .catch(err => res.status(400).json(err))
 }

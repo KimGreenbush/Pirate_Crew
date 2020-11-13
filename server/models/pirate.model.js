@@ -13,7 +13,8 @@ const PirateSchema = new mongoose.Schema({
     },
     chests: {
         type: Number,
-        required: true
+        required: [true, "Please enter a number"],
+        min: [0, "Can't be less than zero(0)"]
     },
     phrase: {
         type: String,
