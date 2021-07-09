@@ -1,10 +1,12 @@
-import "./App.css";
 import React, { useState } from "react";
 import { Router, navigate } from "@reach/router";
 import axios from "axios";
 import Main from "./views/Main";
 import AddForm from "./views/AddForm";
 import Show from "./views/Show";
+
+// css import fail tests... why?
+// import "./App.css";
 
 function App() {
     const [pirates, setPirates] = useState([]);
