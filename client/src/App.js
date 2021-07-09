@@ -11,15 +11,14 @@ function App() {
 	const [errors, setErrors] = useState([]);
 
 	const createPirate = (pirate) => {
-		axios.post("http://localhost:9001/api/pirates/new", pirate)
+		axios.post("http://localhost:9001/api/pirate/new", pirate)
 			.then((res) => {
 				setPirates([...pirates, res.data])
 				setErrors([])
-				navigate("/pirates")
+				navigate("/pirate")
 			})
 			.catch((err) => {
 				const errorRes = err.response.data.errors;
-				// console.log(errorRes)
 				setErrors(Object.keys(errorRes).map((error) => errorRes[error].message))
 			})
 	}
@@ -27,7 +26,7 @@ function App() {
 	return (
 		<div className="App">
 			<Router>
-				<Main path="/pirates" pirates={pirates} setPirates={setPirates} />
+				<Main path="/pirate" pirates={pirates} setPirates={setPirates} />
 				<AddForm path="/pirate/new" onSubmitProp={createPirate} errors={errors} setErrors={setErrors} />
 				<Show path="/pirate/:id" />
 			</Router>
