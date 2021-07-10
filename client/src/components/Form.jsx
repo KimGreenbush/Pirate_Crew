@@ -18,7 +18,7 @@ const Form = ({initialName, onSubmitProp, errors}) => {
     }
 
     return (
-        <div>
+        <div  className="pirate-form">
             { errors? errors.map((error, idx) => <p key={idx}>{error}</p>) : ""}
             <form onSubmit={submitHandler}>
                 <label htmlFor="name">Pirate Name: </label>
@@ -33,12 +33,12 @@ const Form = ({initialName, onSubmitProp, errors}) => {
                 <select value={position} onChange={e => setPosition(e.target.value)}>
                     {positions.map((pos, idx) => <option key={idx} value={pos}>{pos}</option>)}
                 </select>
-                <input type="checkbox" checked={peg} onChange={e => setPeg(e.target.checked)}/>
                 <label htmlFor="peg">Peg Leg</label>
-                <input type="checkbox" checked={patch} onChange={e => setPatch(e.target.checked)}/>
+                <input type="checkbox" checked={peg} onChange={e => setPeg(e.target.checked)}/>
                 <label htmlFor="peg">Eye Patch</label>
-                <input type="checkbox" checked={hook} onChange={e => setHook(e.target.checked)}/>
+                <input type="checkbox" checked={patch} onChange={e => setPatch(e.target.checked)}/>
                 <label htmlFor="peg">Hook Hand</label>
+                <input type="checkbox" checked={hook} onChange={e => setHook(e.target.checked)}/>
                 <button>Add Pirate</button>
             </form>
         </div>
