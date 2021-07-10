@@ -9,7 +9,7 @@ const Show = ({id, pirates, setPirates}) => {
     const [hook, setHook] = useState()
 
     useEffect(() => {
-        axios.get(`http://localhost:9001/api/pirates/${id}`)
+        axios.get(`http://localhost:9001/api/pirate/${id}`)
             .then(res => {
                 setPirate(res.data)
                 setPeg(res.data.peg)
@@ -21,7 +21,7 @@ const Show = ({id, pirates, setPirates}) => {
 
     // const updatePirate = () => {
     //     // console.log(e)
-    //     axios.put(`http://localhost:9001/api/pirates/${id}`, {peg, patch, hook })
+    //     axios.put(`http://localhost:9001/api/pirate/${id}`, {peg, patch, hook })
     //         .then((res) => {
     //             console.log(res)
     //         })
@@ -34,20 +34,19 @@ const Show = ({id, pirates, setPirates}) => {
 
     const changePeg = () => {
         setPeg(!peg)
-        axios.put(`http://localhost:9001/api/pirates/${id}`, {peg: !peg })
+        axios.put(`http://localhost:9001/api/pirate/${id}`, {peg: !peg })
             .then((res) => {
                 console.log(res)
             })
             .catch((err) => {
 				const errorRes = err.response.data
 				console.log(errorRes)
-				// setErrors(Object.keys(errorRes).map((error) => errorRes[error].message))
 			})
     }
 
     const changePatch = () => {
         setPatch(!patch)
-        axios.put(`http://localhost:9001/api/pirates/${id}`, {patch: !patch })
+        axios.put(`http://localhost:9001/api/pirate/${id}`, {patch: !patch })
             .then((res) => {
                 console.log(res)
             })
@@ -60,7 +59,7 @@ const Show = ({id, pirates, setPirates}) => {
 
     const changeHook = () => {
         setHook(!hook)
-        axios.put(`http://localhost:9001/api/pirates/${id}`, {hook: !hook })
+        axios.put(`http://localhost:9001/api/pirate/${id}`, {hook: !hook })
             .then((res) => {
                 console.log(res)
             })
@@ -72,8 +71,8 @@ const Show = ({id, pirates, setPirates}) => {
     }
 
     return (
-        <>
-            <Link to="/pirates"><button>Back to All Pirates</button></Link>
+        <div>
+            <Link to="/pirate"><button>Back to All Pirates</button></Link>
             <h1>{pirate.name}</h1>
             <div>
                 <img src={pirate.image} alt="pirate" />
@@ -87,7 +86,7 @@ const Show = ({id, pirates, setPirates}) => {
                 <p>Eye Patch: {patch ? "Yes" : "No"} <button onClick={changePatch} >{patch ? "No" : "Yes"}</button> </p>
                 <p>Hook Hand: {hook ? "Yes" : "No"} <button onClick={changeHook} >{hook ? "No" : "Yes"}</button> </p>
             </div>
-        </>
+        </div>
     )
 }
 

@@ -18,7 +18,7 @@ const Form = ({initialName, onSubmitProp, errors}) => {
     }
 
     return (
-        <>
+        <div>
             {errors.map((error, idx) => <p key={idx}>{error}</p>)}
             <form onSubmit={submitHandler}>
                 <label htmlFor="name">Pirate Name: </label>
@@ -41,7 +41,7 @@ const Form = ({initialName, onSubmitProp, errors}) => {
                 <label htmlFor="peg">Hook Hand</label>
                 <button>Add Pirate</button>
             </form>
-        </>
+        </div>
     )
 }
 
