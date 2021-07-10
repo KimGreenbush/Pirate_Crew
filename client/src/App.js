@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { Router, navigate } from "@reach/router";
+import { Router, Redirect, navigate } from "@reach/router";
 import axios from "axios";
 import Main from "./views/Main";
 import AddForm from "./views/AddForm";
-import Show from "./views/Show";
+import PirateAbout from "./views/PirateAbout";
 import "./App.css";
 
 function App() {
@@ -26,9 +26,10 @@ function App() {
 	return (
 		<div className="App">
 			<Router>
+				<Redirect from="/" to="/pirate"  noThrow />
 				<Main path="/pirate" pirates={pirates} setPirates={setPirates} />
 				<AddForm path="/pirate/new" onSubmitProp={createPirate} errors={errors} setErrors={setErrors} />
-				<Show path="/pirate/:id" />
+				<PirateAbout path="/pirate/:id" />
 			</Router>
 		</div>
 	);
