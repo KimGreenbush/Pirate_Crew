@@ -19,7 +19,7 @@ const Form = ({initialName, onSubmitProp, errors}) => {
 
     return (
         <div>
-            {errors.map((error, idx) => <p key={idx}>{error}</p>)}
+            { errors? errors.map((error, idx) => <p key={idx}>{error}</p>) : ""}
             <form onSubmit={submitHandler}>
                 <label htmlFor="name">Pirate Name: </label>
                 <input type="text" name="name" id="name" value={name} onChange={e => setName(e.target.value)} />

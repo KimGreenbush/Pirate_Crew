@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Show without crashing 1`] = `
+<div>
+  <a
+    href="/pirate"
+    onClick={[Function]}
+  >
+    <button>
+      Back to All Pirates
+    </button>
+  </a>
+  <h1 />
+  <div>
+    <img
+      alt="pirate"
+    />
+    <p />
+  </div>
+  <div>
+    <h3>
+      About
+    </h3>
+    <p>
+      Position: 
+    </p>
+    <p>
+      Treasures: 
+    </p>
+    <p>
+      Peg Leg: 
+      No
+       
+      <button
+        onClick={[Function]}
+      >
+        Yes
+      </button>
+    </p>
+    <p>
+      Eye Patch: 
+      No
+       
+      <button
+        onClick={[Function]}
+      >
+        Yes
+      </button>
+       
+    </p>
+    <p>
+      Hook Hand: 
+      No
+       
+      <button
+        onClick={[Function]}
+      >
+        Yes
+      </button>
+       
+    </p>
+  </div>
+</div>
+`;

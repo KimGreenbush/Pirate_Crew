@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Main without crashing 1`] = `
+<div>
+  <h1>
+    Pirate Crew
+  </h1>
+  <a
+    href="/pirate/new"
+    onClick={[Function]}
+  >
+    <button>
+      Add Pirate
+    </button>
+  </a>
+  <div>
+    
+  </div>
+</div>
+`;
