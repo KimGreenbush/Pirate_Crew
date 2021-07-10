@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react"
 import { Link } from "@reach/router"
 import axios from "axios"
 
-const Show = ({id, pirates, setPirates}) => {
+const Show = ({id}) => {
     const [pirate, setPirate] = useState({})
     const [peg, setPeg] = useState()
     const [patch, setPatch] = useState()
@@ -18,19 +18,6 @@ const Show = ({id, pirates, setPirates}) => {
             })
             .catch(err => console.log("Error: ", err))
     }, [])
-
-    // const updatePirate = () => {
-    //     // console.log(e)
-    //     axios.put(`http://localhost:9001/api/pirate/${id}`, {peg, patch, hook })
-    //         .then((res) => {
-    //             console.log(res)
-    //         })
-    //         .catch((err) => {
-	// 			const errorRes = err.response.data
-	// 			console.log(errorRes)
-	// 			// setErrors(Object.keys(errorRes).map((error) => errorRes[error].message))
-	// 		})
-    // }
 
     const changePeg = () => {
         setPeg(!peg)
@@ -53,7 +40,6 @@ const Show = ({id, pirates, setPirates}) => {
             .catch((err) => {
 				const errorRes = err.response.data
 				console.log(errorRes)
-				// setErrors(Object.keys(errorRes).map((error) => errorRes[error].message))
 			})
     }
 
@@ -66,27 +52,37 @@ const Show = ({id, pirates, setPirates}) => {
             .catch((err) => {
 				const errorRes = err.response.data
 				console.log(errorRes)
-				// setErrors(Object.keys(errorRes).map((error) => errorRes[error].message))
 			})
     }
 
     return (
-        <div>
+        <div className="pirate-about">
             <Link to="/pirate"><button>Back to All Pirates</button></Link>
             <h1>{pirate.name}</h1>
-            <div>
-                <img src={pirate.image} alt="pirate" />
-                <p>{pirate.phrase}</p>
+            <div className="column">
+                <figure>
+                    <img src={pirate.image} alt="pirate" />
+                    <figcaption>"{pirate.phrase}" - {pirate.name}</figcaption>
+                </figure>
             </div>
-            <div>
-                <h3>About</h3>
+            <div className="column">
+                <h2>About: </h2>
                 <p>Position: {pirate.position}</p>
                 <p>Treasures: {pirate.chests}</p>
-                <p>Peg Leg: {peg ? "Yes" : "No"} <button onClick={changePeg}>{peg ? "No" : "Yes"}</button></p>
-                <p>Eye Patch: {patch ? "Yes" : "No"} <button onClick={changePatch} >{patch ? "No" : "Yes"}</button> </p>
-                <p>Hook Hand: {hook ? "Yes" : "No"} <button onClick={changeHook} >{hook ? "No" : "Yes"}</button> </p>
+                <p>
+                    Peg Leg: {peg ? "Yes" : "No"}
+                    <button onClick={changePeg}>{peg ? "No" : "Yes"}</button>
+                </p>
+                <p>
+                    Eye Patch: {patch ? "Yes" : "No"}
+                    <button onClick={changePatch} >{patch ? "No" : "Yes"}</button>
+                </p>
+                <p>
+                    Hook Hand: {hook ? "Yes" : "No"}
+                    <button onClick={changeHook} >{hook ? "No" : "Yes"}</button>
+                </p>
             </div>
-        </div>
+        </div >
     )
 }
 
