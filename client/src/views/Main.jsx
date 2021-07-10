@@ -11,11 +11,14 @@ const Main = ({pirates, setPirates}) => {
     }, [])
 
     return (
-        <div>
-            <h1>Pirate Crew</h1>
+        <main>
+            <header>
+                <h1>Pirate Crew</h1>
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftcibythelake.com%2Fwp-content%2Fuploads%2F2018%2F06%2Fpirate-ship-150x150.png&f=1&nofb=1" alt="pirate ship" />
+            </header>
             <Link to="/pirate/new"><button>Add Pirate</button></Link>
             <Pirates pirates={pirates} setPirates={setPirates} />
-        </div>
+        </main>
     )
 }
 
