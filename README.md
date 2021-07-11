@@ -15,6 +15,8 @@ And it's responsive so you can build your crew on any screen!
 
 ## Visuals
 
+Check out the `images` folder for more images.
+
 ![Pirate Crew](./images/landing.png)
 ![Add a Pirate](./images/form.png)
 ![About a Pirate](./images/about.png)
