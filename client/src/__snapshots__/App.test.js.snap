@@ -3,5 +3,14 @@
 exports[`renders App without crashing 1`] = `
 <div
   className="App"
-/>
+>
+  <div
+    style={
+      Object {
+        "outline": "none",
+      }
+    }
+    tabIndex="-1"
+  />
+</div>
 `;

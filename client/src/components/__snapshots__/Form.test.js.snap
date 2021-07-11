@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders Form without crashing 1`] = `
-<div>
+<div
+  className="pirate-form"
+>
   
   <form
     onSubmit={[Function]}
@@ -85,11 +87,6 @@ exports[`renders Form without crashing 1`] = `
         Powder Monkey
       </option>
     </select>
-    <input
-      checked={true}
-      onChange={[Function]}
-      type="checkbox"
-    />
     <label
       htmlFor="peg"
     >
@@ -115,6 +112,11 @@ exports[`renders Form without crashing 1`] = `
     >
       Hook Hand
     </label>
+    <input
+      checked={true}
+      onChange={[Function]}
+      type="checkbox"
+    />
     <button>
       Add Pirate
     </button>
