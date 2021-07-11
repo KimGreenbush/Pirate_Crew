@@ -10,7 +10,7 @@ The About page of each pirate shows their details and lets you change their look
 
 If you need to remove a pirate have them Walk the Plank! They're organized alphabetically so it's easy to find who you're looking for.
 
-And it's responsive so you can build your crew on the go!
+And it's responsive so you can build your crew on any screen!
 
 
 ## Visuals
