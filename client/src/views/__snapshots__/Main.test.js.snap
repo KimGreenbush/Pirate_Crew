@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Main without crashing 1`] = `
+<main>
+  <header>
+    <h1>
+      Pirate Crew
+    </h1>
+    <img
+      alt="pirate ship"
+      src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftcibythelake.com%2Fwp-content%2Fuploads%2F2018%2F06%2Fpirate-ship-150x150.png&f=1&nofb=1"
+    />
+  </header>
+  <a
+    href="/pirate/new"
+    onClick={[Function]}
+  >
+    <button>
+      Add Pirate
+    </button>
+  </a>
+  <div
+    className="pirates"
+  >
+    
+  </div>
+</main>
+`;

@@ -3,11 +3,11 @@
  */
 
 import React from "react";
-import App from "./App";
+import DeleteButton from "./DeleteButton";
 import renderer from "react-test-renderer";
 
-test("renders App without crashing", () => {
-	const component = renderer.create(<App />);
+test("renders DeleteButton without crashing", () => {
+	const component = renderer.create(<DeleteButton />);
 	let tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });

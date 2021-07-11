@@ -3,11 +3,11 @@
  */
 
 import React from "react";
-import App from "./App";
+import Pirates from "./Pirates";
 import renderer from "react-test-renderer";
 
-test("renders App without crashing", () => {
-	const component = renderer.create(<App />);
+test("renders Pirates without crashing", () => {
+	const component = renderer.create(<Pirates />);
 	let tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });

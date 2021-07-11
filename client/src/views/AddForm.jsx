@@ -9,7 +9,7 @@ const AddForm = ({ onSubmitProp, errors, setErrors }) => {
     }
 
     return (
-        <div>
+        <div className="add-form">
             <h1>Add Pirate</h1>
             <Link to="/pirate" onClick={clearForm} ><button>Cancel</button></Link>
             <Form onSubmitProp={onSubmitProp} initialName="" errors={errors} />

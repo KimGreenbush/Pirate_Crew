@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Form without crashing 1`] = `
+<div
+  className="pirate-form"
+>
+  
+  <form
+    onSubmit={[Function]}
+  >
+    <label
+      htmlFor="name"
+    >
+      Pirate Name: 
+    </label>
+    <input
+      id="name"
+      name="name"
+      onChange={[Function]}
+      type="text"
+    />
+    <label
+      htmlFor="image"
+    >
+      Image Url: 
+    </label>
+    <input
+      id="image"
+      name="image"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <label
+      htmlFor="chests"
+    >
+      # of Treasure Chests:
+    </label>
+    <input
+      id="chests"
+      name="chests"
+      onChange={[Function]}
+      type="number"
+      value={0}
+    />
+    <label
+      htmlFor="phrase"
+    >
+      Pirate Catch Phrase:
+    </label>
+    <textarea
+      onChange={[Function]}
+      value=""
+    />
+    <label
+      htmlFor="position"
+    >
+      Crew Position:
+    </label>
+    <select
+      onChange={[Function]}
+      value="Captain"
+    >
+      <option
+        value="Captain"
+      >
+        Captain
+      </option>
+      <option
+        value="First Mate"
+      >
+        First Mate
+      </option>
+      <option
+        value="Quarter Master"
+      >
+        Quarter Master
+      </option>
+      <option
+        value="Boatswain"
+      >
+        Boatswain
+      </option>
+      <option
+        value="Powder Monkey"
+      >
+        Powder Monkey
+      </option>
+    </select>
+    <label
+      htmlFor="peg"
+    >
+      Peg Leg
+    </label>
+    <input
+      checked={true}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <label
+      htmlFor="peg"
+    >
+      Eye Patch
+    </label>
+    <input
+      checked={true}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <label
+      htmlFor="peg"
+    >
+      Hook Hand
+    </label>
+    <input
+      checked={true}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <button>
+      Add Pirate
+    </button>
+  </form>
+</div>
+`;

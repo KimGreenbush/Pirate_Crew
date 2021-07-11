@@ -3,11 +3,11 @@
  */
 
 import React from "react";
-import App from "./App";
+import Main from "./Main";
 import renderer from "react-test-renderer";
 
-test("renders App without crashing", () => {
-	const component = renderer.create(<App />);
+test("renders Main without crashing", () => {
+	const component = renderer.create(<Main />);
 	let tree = component.toJSON();
 	expect(tree).toMatchSnapshot();
 });

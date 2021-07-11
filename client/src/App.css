@@ -1,3 +1,67 @@
 .App {
   text-align: center;
+  font-family: "Calligraffitti", cursive;
+  color:rgb(126, 40, 40);
+}
+
+main h1 {
+  display: inline-block;
+  margin: 20px;
+  font-size: 80px;
+}
+
+button {
+  background-color: rgb(114, 41, 41);
+  color: white;
+  font-family: "Calligraffitti", cursive;
+  border: 1px solid rgb(114, 41, 41);
+  border-radius: 50%;
+  box-shadow: 1px 1px 3px black;
+  width: 120px;
+  height: 50px;
+  margin: 5px;
+}
+
+.pirates {
+  margin: 20px;
+}
+
+.pirate {
+  display: inline-block;
+  margin: 30px;
+}
+
+.pirate img {
+  width: 100px;
+}
+
+.pirate-form label {
+  display: block;
+  margin-top: 10px;
+}
+
+.pirate-form button {
+  display: block;
+  margin: 10px auto;
+}
+
+.pirate-about img {
+  max-width: 500px;
+}
+
+.pirate-about>div {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 50px;
+}
+
+.pirate-about>.column button {
+  width: 50px;
+}
+
+@media
+only screen and (max-width: 760px){
+  .pirate-about img {
+    max-width: 100%;
+  }
 }
