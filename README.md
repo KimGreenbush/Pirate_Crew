@@ -12,6 +12,10 @@ If you need to remove a pirate have them Walk the Plank! They're organized alpha
 
 And it's responsive so you can build your crew easily on any screen!
 
+## Background
+
+This actually started as an exam for my coding bootcamp but I loved how fun it was so I wanted to keep expanding on it. The new ideas I come up with for it become new learning opportunities and learning is fun.
+
 ## Visuals
 
 Check out the [images](images) folder for more images.
