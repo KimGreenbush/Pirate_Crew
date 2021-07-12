@@ -2,7 +2,7 @@
 
 # Pirate_Crew
 
-A fun app to create the perfect pirate crew.
+A fun app to create the perfect pirate crew!
 
 Give each crew mate a name, postion, quote, and decide if they should have a peg leg, hook, and/or eye patch!
 
