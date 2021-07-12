@@ -77,6 +77,7 @@ There some snapshot tests for the client side that make sure the components rend
 - Registration system so users could create their own personal crew
 - File upload to replace the current dependency on urls
 - Extract client from backend app and switch to cloud services for static hosting
+- mobile compatibility
 
 ## License
 
