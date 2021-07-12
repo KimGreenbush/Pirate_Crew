@@ -6,45 +6,74 @@ A fun app to create the perfect pirate crew.
 
 Give each crew mate a name, postion, quote, and decide if they should have a peg leg, hook, and/or eye patch!
 
-The About page of each pirate shows their details and lets you change their looks by editing if they have an eye patch, peg leg, or hook.
+The About page of each pirate shows their details and lets you "change" their looks by switching their eye patch, peg leg, or hook stats.
 
-If you need to remove a pirate have them Walk the Plank! They're organized alphabetically so it's easy to find who you're looking for.
+If you need to remove a pirate have them Walk the Plank! They're organized alphabetically so it's easy to find whom you're looking for.
 
-And it's responsive so you can build your crew on any screen!
-
+And it's responsive so you can build your crew easily on any screen!
 
 ## Visuals
 
-Check out the `images` folder for more images.
+Check out the [images](images) folder for more images.
 
 ![Pirate Crew](./images/landing.png)
 ![Add a Pirate](./images/form.png)
 ![About a Pirate](./images/about.png)
 ![Responsive Pirate layout](./images/mobile.png)
 
+## Prerequisites
+
+You will need a package manager to run the installation. I used [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) which comes with Node.js. And [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for cloning.
+
+[Postman](https://www.postman.com/) is optional but handy for testing APIs.
+
 ## Installation
 
-1. Using a terminal, clone the repository to the destination of your choice:
+Using a terminal:
 
-    ```shell
+```shell
+    // clone the repository
     git clone https://github.com/KimGreenbush/WttA__Welcome-to-the-Arcade.git
-    ```
 
-2. Install dependencies:
-
-    ```shell
+    // install dependencies
     npm install
-    ```
 
-3. Run a local server to start the backend *Express* app:
+    // navigate to the client folder and install dependencies
+    cd client
+    npm install
+```
 
-    ```shell
+### Running the app
+
+The client and server run independently from each other so you'll need to run servers in different terminals.
+
+```shell
+    // terminal 1, start the express app where server.js is
     npm run start
-    ```
+```
 
-4. In another terminal navigate into the `client` folder and start the *React* app:
-
-    ```shell
+```shell
+    // terminal 2, start the client app
     cd client
     npm run start
-    ```
+```
+
+## Running the tests
+
+There some snapshot tests for the client side that make sure the components render and track their changes.
+
+```shell
+    // navigate to the client side to run its tests
+    cd client
+    npm run test
+```
+
+## Future
+
+I'd like to add a registration system so users could create their own personal crew. As well include a file upload to replace the current dependency on urls.
+
+## License
+
+This project is licensed under the [GNU General Public License v3.0](license.md)
+Free Software Foundation, Inc. - see the [license.md](license.md) file for
+details
