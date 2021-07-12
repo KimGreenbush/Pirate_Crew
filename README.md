@@ -25,6 +25,8 @@ Check out the [images](images) folder for more images.
 
 You will need a package manager to run the installation. I used [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) which comes with Node.js. And [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for cloning.
 
+[Postman](https://www.postman.com/) is optional but handy for testing APIs.
+
 ## Installation
 
 Using a terminal:
