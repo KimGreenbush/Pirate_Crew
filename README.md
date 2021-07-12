@@ -12,7 +12,6 @@ If you need to remove a pirate have them Walk the Plank! They're organized alpha
 
 And it's responsive so you can build your crew easily on any screen!
 
-
 ## Visuals
 
 Check out the [images](images) folder for more images.
@@ -66,6 +65,10 @@ There some snapshot tests for the client side that make sure the components rend
     cd client
     npm run test
 ```
+
+## Future
+
+I'd like to add a registration system so users could create their own personal crew. As well include a file upload to replace the current dependency on urls.
 
 ## License
 
