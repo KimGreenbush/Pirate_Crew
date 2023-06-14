@@ -37,7 +37,7 @@ Using a terminal:
 
 ```shell
     // clone the repository
-    git clone https://github.com/KimGreenbush/WttA__Welcome-to-the-Arcade.git
+    git clone https://github.com/KimGreenbush/Pirate_Crew.git
 
     // install dependencies
     npm install
